@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlindApp</string>
+    <string name="walk">Walk</string>
+    <string name="bike">Bike</string>
+</resources>

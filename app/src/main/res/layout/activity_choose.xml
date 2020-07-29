@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_map"
+    tools:context=".ChooseActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="588dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="74dp"
+        app:cardCornerRadius="48dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="17dp"
+                android:text="You are going to Ismailia stadium by car"
+                android:textColor="#292826"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/car_img"
+                android:layout_width="185dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="38dp"
+                android:layout_marginStart="127dp"
+                android:layout_marginEnd="125dp"
+                android:src="@drawable/img_car"
+                android:background="@drawable/rounded_img_car"
+                app:layout_constraintTop_toBottomOf="@id/txt_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/mic_iv"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_mic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66dp"
+                android:padding="17dp"
+                android:text="It would take 5 min..would You like  to take careem or uber?"
+                android:textColor="#292826"
+                app:layout_constraintTop_toBottomOf="@id/car_img" />
+
+            <LinearLayout
+                android:id="@+id/lin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_btn"
+                >
+
+                <ImageButton
+                    android:id="@+id/careem_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="96dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_btn_careem"
+                    android:src="@drawable/btn_careem"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/uber_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:src="@drawable/btn_uber"
+                    android:background="@drawable/rounded_btn_uber"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

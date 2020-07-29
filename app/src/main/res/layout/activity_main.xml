@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_map"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="588dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="74dp"
+        app:cardCornerRadius="48dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/mic_iv"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_mic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/lin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/mic_iv"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <Button
+                    android:id="@+id/walk_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn_walk"
+                    android:text="@string/walk"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bike_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn_bike"
+                    android:text="@string/bike"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/car_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn_car"
+                    android:text="Car"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:padding="17dp"
+                android:text="You can go to Ismailia stadium in about..."
+                android:textColor="#292826"
+                app:layout_constraintBottom_toTopOf="@id/lin_img" />
+
+            <TextView
+                android:id="@+id/txt_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:padding="17dp"
+                android:text="So You would to go by..."
+                android:textColor="#292826"
+                app:layout_constraintBottom_toTopOf="@+id/lin_btn" />
+
+            <LinearLayout
+                android:id="@+id/lin_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="112dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/lin_btn">
+
+                <ImageView
+                    android:id="@+id/walk_ic"
+                    android:layout_width="76dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_walk" />
+
+                <ImageView
+                    android:id="@+id/bike_ic"
+                    android:layout_width="83dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_bike" />
+
+                <ImageView
+                    android:id="@+id/car_ic"
+                    android:layout_width="98dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_car" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
